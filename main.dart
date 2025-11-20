@@ -197,7 +197,7 @@ class _RestoHomePageState extends State<RestoHomePage>
       child: Row(
         children: [
           const Expanded(
-            child: Text('Welcome to Hilda Resto',
+            child: Text('Welcome to  Resto',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
           ),
           FilledButton(
@@ -385,8 +385,7 @@ class _RestoHomePageState extends State<RestoHomePage>
                     const SizedBox(height: 8),
                     Text('Harga: Rp ${it['price']}'),
                     const SizedBox(height: 12),
-                    const Text(
-                        'Deskripsi: Makanan lezat dan cocok untuk UTS demo.'),
+                    const Text('Deskripsi: Makanan lezat dan mengenyangkan.'),
                     const SizedBox(height: 16),
                     Row(
                       children: [
@@ -458,7 +457,7 @@ class _RestoHomePageState extends State<RestoHomePage>
     final isWide = MediaQuery.of(context).size.width > 900;
     return Scaffold(
       appBar: AppBar(
-          title: const Text('Katalog Makanan - UTS'),
+          title: const Text('Katalog Makanan & Minuman'),
           centerTitle: true,
           elevation: 1),
       body: Column(
@@ -492,9 +491,9 @@ class _RestoHomePageState extends State<RestoHomePage>
                                     borderRadius: BorderRadius.circular(12)),
                                 child: const ListTile(
                                   leading: Icon(Icons.info_outline),
-                                  title: Text('Info UTS'),
+                                  title: Text('Lokai resto'),
                                   subtitle: Text(
-                                      'Satu halaman, GridView, Custom widget, Animasi'),
+                                      'jln.Muara sari 1,kebonlega,bojongloa kidul'),
                                 ),
                               ),
                               buildReviews(), // <--- Ditambahkan di bawah info UTS
